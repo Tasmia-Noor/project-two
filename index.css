@@ -1,0 +1,706 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    overflow-x: hidden;
+}
+.navbar{
+    width: 100%;
+    height: 13vh;
+    background-color: orange;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    animation-name: clr;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes clr{
+    0%{
+        background-color: orange;
+    }
+    10%{
+        background-color: grey;
+    }
+    20%{
+        background-color: skyblue;
+    }
+    30%{
+        background-color: blue;
+    }
+    40%{
+        background-color: purple;
+    }
+    50%{
+        background-color: brown;
+    }
+    60%{
+        background-color: rgb(255, 208, 0);
+    }
+    70%{
+        background-color: rgb(141, 218, 17);
+    }
+    80%{
+        background-color: rgb(7, 233, 94);
+    }
+    90%{
+        background-color: green;
+    }
+    100%{
+        background-color: red;
+    }
+}
+.navbar>ul{
+    color: white;
+    list-style: none;
+    position: absolute;
+    left: 45%;
+    top: 3.5vh;
+}
+.navbar>ul li{
+    float: left;
+    /* position: absolute; */
+    margin-left: 2vw;
+    padding: 9px;
+    padding-left: 18px;
+    padding-right: 18px;
+    text-transform: capitalize;
+    border: 2px solid white;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 16px;
+    transition-duration: 1s;
+}
+.navbar>ul li:hover{
+    background-color: teal;
+    border: 2px solid teal;
+    transform: translateY(-1vh);
+    cursor: pointer;
+}
+.head{
+    width: 100%;
+    height: 85vh;
+    /* border: 1px solid #000; */
+    position: relative;
+    background-image: url(mountain.jpg);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    animation-name: picture;
+    animation-duration: 15s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes picture{
+    0%{
+        background-image: url(mountain.jpg);
+    }
+    20%{
+        background-image: url(mountain2.jpg);
+    }
+    40%{
+        background-image: url(mountain3.jpg);
+    }
+    60%{
+        background-image: url(mountain4.jpg);
+    }
+    80%{
+        background-image: url(mountain.jpg);
+    }
+    100%{
+        background-image: url(world2.jpg);
+    }
+}
+.head>h1{
+    color: white;
+    text-transform: capitalize;
+    font-size: 50px;
+    position: absolute;
+    top: 30%;
+    left: 10%;
+}
+.head>p{
+    color: white;
+    position: absolute;
+    top: 43%;
+    left: 11%;
+}
+.btn{
+    color: white;
+    border: 2px solid white;
+    position: absolute;
+    top: 55%;
+    left: 11%;
+    background: transparent;
+    border-radius: 20px;
+    height: 6.5vh;
+    width: 9.5vw;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition-duration: 1s;
+}
+.btn:hover{
+    background-color: teal;
+    border: 1px solid teal;
+    transform: translateY(1vh);
+}
+.fst{
+    width: 100%;
+    height: 38vh;
+    /* border: 1px solid #000; */
+}
+.mini{
+    height: 100%;
+    width: 33.3%;
+    background-color: green;
+    float: left;
+    position: relative;
+  
+}
+.img{
+    width: 4.5vw;
+    height: 9vh;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    left: 40%;
+    top: 5vh;
+    border: 5px solid white;
+}
+.mini h2{
+    color: white;
+    text-align: center;
+    margin-top: 17vh;
+    text-transform: capitalize;
+}
+.mini p{
+    color: white;
+    text-align: center;
+    margin-top: 2vh;
+}
+.mini>button{
+    color: skyblue;
+    background: transparent;
+    border: none;
+    margin-left: 42%;
+    margin-top: 2vh;
+}
+.m2{
+    background-color: black;
+}
+.m3{
+    background-color: teal;
+}
+.sec{
+    /* border: 1px solid #000; */
+    width: 100%;
+    height: 75vh;
+    position: relative;
+}
+.sec>h1{
+    color: orangered;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 4vh;
+}
+.small{
+    width: 37%;
+    height: 29%;
+    background-color: white;
+    box-shadow: 1px 1px 5px grey;
+    float: left;
+    position: absolute;
+    top: 18vh;
+    left: 12%;
+}
+.small>img{
+    width: 5vw;
+    height: 10vh;
+    background-color: rgb(255, 102, 0);
+    /* padding: 5px; */
+    border-radius: 50%;
+    /* background-size: 100% 100%; */
+    margin-left: 2vw;
+    margin-top: 7vh;
+}
+.small>h3{
+    text-transform: capitalize;
+    position: absolute;
+    left: 18vw;
+    top: 7vh;
+    color: rgb(68, 66, 66);
+}
+.small>p{
+    position: absolute;
+    left: 12vw;
+    top: 11vh;
+    color: rgb(83, 82, 82);
+}
+.s2{
+    left: 52%;
+}
+.s3{
+    top: 55%;
+}
+.s4{
+    top: 55%;
+    left: 52%;
+}
+.thrd{
+    width: 100%;
+    height: 80vh;
+    /* border: 1px solid #000; */
+}
+.pic{
+    width: 45%;
+    height: 98.5%;
+    /* border: 1px solid #000; */
+    margin-left: 8px;
+    background-image: url(forth.jpg);
+    background-size: 100% 100%;
+    float: left;
+}
+.large{
+    width: 53.5%;
+    height: 98.5%;
+    /* border: 1px solid brown; */
+    float: right;
+}
+.data{
+    width: 17vw;
+    height: 38.5vh;
+    /* border: 1px solid red; */
+    background-color: white;
+    box-shadow: -1px -1px 4px grey;
+    float: left;
+}
+.d1{
+    margin-left: 9px;
+}
+.d2{
+    margin-left: 9px;
+    margin-top: 7px;
+}
+.d3{
+    margin-top: 7px;
+}
+.pen{
+    height: 5vh;
+    width: 3vw;
+    margin-top: 2.5vh;
+    margin-left: 1vw;
+}
+.data>h3{
+    color: orangered;
+    margin-left: 1vw;
+    margin-top: 2vh;
+    text-transform: capitalize;
+}
+.data>p{
+    color: rgb(189, 184, 184);
+    margin-left: 1vw;
+    margin-top: 2vh;
+    font-weight: bold;
+}
+.che{
+    height: 7vh;
+    width: 3vw;
+    margin-top: 5px;
+}
+.forth{
+    height: 60vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(00,00,00,0.6),rgba(00,00,00,0.6)), url(world2.jpg);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+.four{
+    width: 15vw;
+    height: 30vh;
+    /* border: 1px solid red; */
+    float: left;
+    margin-left: 8vw;
+    margin-top: 15vh;
+    transition-duration: 1s;
+}
+.four:hover{
+    background-color: orangered;
+    border-radius: 50%;
+}
+.four h2{
+    color: orangered;
+    text-align: center;
+    margin-top: 30%;
+}
+.four:hover h2{
+    color: white;
+}
+.hb{
+    color: white;
+    font-size: 25px;
+    text-align: center;
+}
+.fifth{
+    width: 100%;
+    height: 60vh;
+    /* border: 1px solid red; */
+    overflow: hidden;
+}
+.half{
+    width: 50%;
+    height: 100%;
+    background-image: url(group1.jpg);
+    background-size: 100% 100%;
+    float: left;
+}
+.half2{
+    width: 46%;
+    height: 100%;
+    /* border: 1px solid #000; */
+    float: right;
+}
+.half2>h4{
+    margin-top: 25vh;
+}
+.half2>h3{
+    color: orangered;
+    margin-top: 2vh;
+    font-size: 21px;
+}
+.half2>p{
+    color: orangered;
+    margin-top: 2vh;
+}
+.half1{
+    background-image: url(group2.jpg);
+    background-size: 100% 100%;
+    float: right;
+}
+.hf2{
+    float: left;
+}
+.hf2 h4{
+    margin-left: 21%;
+}
+.hf2 h3{
+    margin-left: 21%;
+    font-size: 21px;
+}
+.hf2 p{
+    margin-left: 21%;
+}
+.hf3{
+    background-image: url(group3.jpg);
+}
+.sixth{
+    width: 100%;
+    height: 107vh;
+    background-color: rgb(201, 200, 200);
+    position: relative;
+}
+.sixth h1{
+    color: orangered;
+    position: absolute;
+    left: 45%;
+    top: 2%;
+}
+.work{
+    width: 28.6vw;
+    height: 35vh;
+    background-image: url(work01.jpg);
+    background-size: 100% 100%;
+    float: left;
+    box-shadow: 1px 1px 5px grey;
+    margin-top: 20vh;
+    margin-left: 5vw;
+}
+.w1{
+    margin-left: 1vw;
+    background-image: url(work02.jpg);
+    background-size: 100% 100%;
+}
+.w2{
+    margin-left: 1vw;
+    background-image: url(work03.jpg);
+    background-size: 100% 100%;
+}
+.w3{
+    margin-left: 5vw;
+    margin-top: 1.5vh;
+    background-image: url(work04.jpg);
+    background-size: 100% 100%;
+}
+.w4{
+    margin-left: 1vw;
+    margin-top: 1.5vh;
+    background-image: url(work05.jpg);
+    background-size: 100% 100%;
+}
+.w5{
+    margin-left: 1vw;
+    margin-top: 1.5vh;
+    background-image: url(work06.jpg);
+    background-size: 100% 100%;
+}
+.sixth>button{
+    text-transform: uppercase;
+    background-color: orange;
+    position: absolute;
+    top: 91%;
+    left: 45%;
+    width: 8vw;
+    height: 5.5vh;
+    border: 1px solid orange;
+    border-radius: 20px;
+    color: white;
+    font-weight: bold;
+}
+.seventh{
+    width: 100%;
+    height: 83vh;
+    /* border: 1px solid #000; */
+    position: relative;
+}
+.seventh>h1{
+    color: orangered;
+    position: absolute;
+    left: 44%;
+    top: 3%;
+}
+.plan{
+    width: 22%;
+    height: 47vh;
+    background-color: white;
+    float: left;
+    box-shadow: 1px 1px 5px grey;
+    position: absolute;
+    top: 24vh;
+    left: 14.5%;
+}
+.p2{
+    height: 57vh;
+    left: 38%;
+    top: 18vh;
+}
+.p3{
+    left: 61.5%;
+    top: 23vh;
+}
+.rkt{
+    height: 9vh;
+    width: 4.5vw;
+    margin-left: 65%;
+    margin-top: 2vh;
+}
+.rkt2{
+    margin-left: 61%;
+}
+.plan>h2{
+    text-transform: capitalize;
+    position: absolute;
+    top: 7.5vh;
+    left: 4vw;
+}
+.p2>h2{
+    left: 5vw;
+}
+.plan>h3{
+    text-align: center;
+    margin-bottom: 3vh;
+}
+.tc{
+    height: 2vh;
+    width: 10px;
+    float: left;
+    margin-left: 32%;
+    margin-top: 2px;
+}
+.plan>p{
+    font-size: 11px;
+    line-height: 1.5;
+}
+.btn3{
+    background-color: orangered;
+    border: 1px solid orangered;
+    width: 11vw;
+    height: 5vh;
+    border-radius: 20px;
+    text-transform: capitalize;
+    color: white;
+    margin-left: 23%;
+    margin-top: 2vh;
+}
+.fix{
+    width: 100%;
+    height: 50vh;
+    background-image: url(mountain.jpg);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    position: relative;
+}
+.fix>h1{
+    color: white;
+    text-transform: capitalize;
+    position: absolute;
+    left: 40%;
+    top: 10vh;
+}
+.fix>p{
+    color: white;
+    text-align: center;
+    position: absolute;
+    left: 30%;
+    top: 20vh;
+}
+.btn4{
+    width: 9vw;
+    height: 5vh;
+    background-color: orangered;
+    border: 1px solid orangered;
+    border-radius: 20px;
+    position: absolute;
+    left: 45%;
+    top: 65%;
+    text-transform: capitalize;
+    color: white;
+}
+.news{
+    width: 100%;
+    height: 94vh;
+    /* border: 1px solid red; */
+    position: relative;
+    overflow: hidden;
+}
+.news>h1{
+    text-transform: uppercase;
+    color: orangered;
+    text-align: center;
+    margin-top: 3vh;
+}
+.child{
+    width: 23%;
+    height: 75vh;
+    /* border: 1px solid #000; */
+    float: left;
+    position: absolute;
+    left: 13.5%;
+    top: 14vh;
+}
+.child1{
+    left: 38.5%;
+}
+.child2{
+    left: 63.5%;
+}
+.childish{
+    width: 100%;
+    height: 47.5%;
+    background-image: url(blog01.jpg);
+    background-size: 100% 100%;
+}
+.childish1{
+    background-image: url(blog02.jpg);
+    background-size: 100% 100%;
+}
+.childish2{
+    background-image: url(blog03.jpg);
+    background-size: 100% 100%;
+}
+.child3{
+    width: 100%;
+    height: 47.5%;
+    /* border: 1px solid #000; */
+    box-shadow: 1px 1px 5px grey;
+    position: absolute;
+    bottom: 0;
+}
+.child3>h3{
+    position: absolute;
+    font-size: 20px;
+    top: 7vh;
+    left: 1vw;
+}
+.para1{
+    color: rgb(218, 214, 214);
+    font-size: 10px;
+    font-weight: bold;
+    position: absolute;
+    top: 12vh;
+    left: 1vw;
+}
+.para2{
+    color: grey;
+    position: absolute;
+    left: 1vw;
+    top: 16vh;
+    font-size: 15px;
+}
+.last{
+    width: 100%;
+    height: 56vh;
+    background-color: black;
+    position: relative;
+}
+.last>h1{
+    text-transform: uppercase;
+    color: white;
+    position: absolute;
+    left: 42%;
+    top: 10vh;
+}
+.icon{
+    font-size: 20px;
+    color: white;
+    position: absolute;
+    top: 19vh;
+    left: 10vw;
+}
+.icon1{
+    top: 29vh;
+}
+.icon2{
+    top: 39vh;
+}
+.pl{
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 19vh;
+    left: 13%;
+}
+.pl2{
+    top: 28.5vh;
+}
+.pl3{
+    top: 38.5vh;
+}
+.icon3{
+    font-size: 20px;
+    color: white;
+    position: absolute;
+    left: 80%;
+    top: 28vh;
+    /* float: right; */
+}
+.i4{
+    left: 81.5%;
+}
+.i5{
+    left: 83.5%;
+}
+.i6{
+    left: 85.5%;
+}
+.last>img{
+    width: 4vw;
+    position: absolute;
+    left: 36%;
+    top: 80%;
+}
+.pll{
+    color: white;
+    position: absolute;
+    left: 41%;
+    top: 81.5%;
+}
